@@ -1,0 +1,17 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: msvc-auth
+  datasource:
+    url: r2dbc:postgresql://localhost:5432/authDB
+    username: auth_user
+    password: auth_pass
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

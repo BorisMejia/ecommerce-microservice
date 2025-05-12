@@ -22,6 +22,12 @@
     </module>
     <module>microservice-eureka
     </module>
+    <module>
+      microservice-config
+    </module>
+    <module>
+      microservice-auth
+    </module>
   </modules>
 
   <properties>

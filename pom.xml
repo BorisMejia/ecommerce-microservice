@@ -25,6 +25,9 @@
     <module>
       microservice-config
     </module>
+    <module>
+      microservice-auth
+    </module>
   </modules>
 
   <properties>

@@ -16,6 +16,14 @@
   <name>ecommerce-microservice</name>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>
+      microservice-gateway
+    </module>
+    <module>microservice-eureka
+    </module>
+  </modules>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>21</maven.compiler.release>
@@ -31,6 +39,10 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.38</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
   </dependencies>
 

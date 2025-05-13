@@ -28,6 +28,9 @@
     <module>
       microservice-auth
     </module>
+    <module>
+      microservice-product
+    </module>
   </modules>
 
   <properties>

@@ -12,11 +12,10 @@ import java.util.UUID;
 
 @Component
 @RequiredArgsConstructor
-public class UserPostgresRepositoryImpl implements UserRepositoryPort {
+public class UserRepositoryImpl implements UserRepositoryPort {
 
     private final UserRepositoryR2dbc repositoryR2dbc;
     private final UserMapper mapper;
-
 
     @Override
     public Mono<User> save(User user) {

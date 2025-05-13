@@ -1,4 +1,4 @@
-package com.microservice.auth.infra.adapters.out.event;
+package com.microservice.auth.infra.adapters.out.event.config;
 
 import com.microservice.auth.infra.adapters.out.event.dto.UserCreatedEvent;
 import org.apache.kafka.clients.producer.ProducerConfig;

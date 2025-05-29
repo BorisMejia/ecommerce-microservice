@@ -1,2 +1,7 @@
-package com.microservice.auth.shared.dto;public record LoginRequest() {
+package com.microservice.auth.shared.dto;
+
+public record LoginRequest(
+        String email,
+        String password
+) {
 }

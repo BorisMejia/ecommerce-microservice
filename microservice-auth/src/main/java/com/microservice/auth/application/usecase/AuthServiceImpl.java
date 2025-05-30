@@ -25,9 +25,7 @@ public class AuthServiceImpl implements AuthService{
         return userRepository.existsByEmail(email)
                 .flatMap(exists -> {
                     if (exists) return Mono.error(new UserAlreadyExistsException(email));
-                    UUID userId = UUID.randomUUID();
-                    String paswordHash = passwordEncoder.encode(password);
-                    User user = new User(userId, userName, email, paswordHash);
+                    User user = new User(UUID.randomUUID(), userName, email, passwordEncoder.encode(password));
                     return userRepository.save(user);
                 });
     }

@@ -27,8 +27,8 @@ logging:
     org.springframework.security: DEBUG
 
 jwt:
-  secret: ${JWT_SECRET_KEY}
-  expiration: ${JWT_EXPIRATION}
+  secret: ${JWT_SECRET_KEY:3cb7c5e98f2d4a52a4a7c5c99b0b1d32f88e4c2d0c4e8d9f3e5b6c7a1e3d4f5b}
+  expiration: ${JWT_EXPIRATION:7200000}
 
 eureka:
   instance:
